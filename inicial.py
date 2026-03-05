@@ -12,8 +12,8 @@ SIDEBAR_BG = "#343A40"
 CARD_BG = "#F8F9FA"
 INPUT_BG = "#D1D5DB"
 
-EMAIL_ENDERECO = 'murilo.zamproni@gmail.com'
-EMAIL_SENHA = 'pyld jgwh lwqo edaw'
+EMAIL_ENDERECO = 'SEU EMAIL'
+EMAIL_SENHA = 'SENHA'
 
 def criar_banco():
     conn = sqlite3.connect("usuarios.db")
@@ -541,3 +541,4 @@ def main(page: ft.Page):
     page.add(tela_login)
 
 ft.app(target=main)
+
