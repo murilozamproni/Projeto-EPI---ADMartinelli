@@ -257,7 +257,7 @@ def main(page: ft.Page):
                 cursor.execute("SELECT login FROM usuarios WHERE nome = ?", (drop_funcionario.value,))
                 resultado = cursor.fetchone()
                 
-                email_destino = resultado[0] if resultado else 'murilo.zampronio@admartinelli.com.br'
+                email_destino = resultado[0] if resultado else 'email_destino'
 
                 try:
                     msg = EmailMessage()
@@ -541,4 +541,5 @@ def main(page: ft.Page):
     page.add(tela_login)
 
 ft.app(target=main)
+
 
